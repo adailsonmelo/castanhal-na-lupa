@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Castanhal na Lupa">
+  <rect width="64" height="64" rx="16" fill="#172629"/>
+  <text x="32" y="42" text-anchor="middle"
+        font-family="Manrope, Arial, sans-serif" font-weight="800"
+        font-size="26" letter-spacing="-1.5" fill="#f5f3ed">CL</text>
+  <circle cx="50" cy="50" r="4.5" fill="#f4c969"/>
+</svg>

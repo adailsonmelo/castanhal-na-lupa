@@ -1,0 +1,65 @@
+CASTANHAL NA LUPA — HOTSITE DOSSIÊ 001
+Reforma da Creche Sara de Souza Araújo
+
+ARQUIVOS
+- index.html ........ conteúdo e estrutura da página
+- styles.css ........ identidade visual e layout responsivo
+- script.js ......... menu mobile, compartilhar, copiar link e copiar perguntas
+- favicon.svg ....... ícone da aba ("CL")
+- og-image.svg ...... fonte do cartão de compartilhamento (1200×630)
+- og-image.png ...... cartão usado no og:image (gerar a partir do SVG)
+- og-image.html ..... auxiliar para renderizar o PNG
+- CNAME ............. domínio customizado do GitHub Pages
+- .nojekyll ......... evita processamento Jekyll
+
+COMO VISUALIZAR LOCALMENTE
+1. Extraia a pasta.
+2. Abra index.html no navegador (duplo clique).
+   Observação: o compartilhamento nativo e a cópia para a área de
+   transferência funcionam melhor em HTTPS ou localhost.
+3. Para testar com servidor local:
+   python3 -m http.server 8000
+   e abra http://localhost:8000
+
+COMO PUBLICAR (GITHUB PAGES)
+1. Crie um repositório público e suba os arquivos na raiz.
+2. Settings → Pages → Deploy from a branch → main / (root).
+3. Em Custom domain, informe castanhalnalupa.com.br e salve.
+4. No Registro.br, configure:
+   - A @ 185.199.108.153
+   - A @ 185.199.109.153
+   - A @ 185.199.110.153
+   - A @ 185.199.111.153
+   - CNAME www SEU-USUARIO.github.io
+5. Aguarde o DNS e habilite "Enforce HTTPS".
+
+GERAR O og-image.png
+Opção A (Chrome headless):
+  google-chrome --headless=new --hide-scrollbars \
+    --screenshot=og-image.png --window-size=1200,630 og-image.html
+Opção B (rsvg-convert):
+  rsvg-convert -w 1200 -h 630 og-image.svg -o og-image.png
+Opção C: abra og-image.html no navegador, capture 1200×630.
+
+ATENÇÃO À ATUALIZAÇÃO EDITORIAL
+Dados conferidos no PNCP em 21/11/2026:
+- Concorrência Eletrônica 014/2026
+- Fundo Municipal de Educação de Castanhal
+- Objeto: reforma da Creche Sara de Souza Araújo
+- Valor estimado: R$ 700.735,64
+- Recebimento de propostas até 03/12/2026 às 09h
+Reconferir data, horário e situação nos canais oficiais antes de
+divulgar e antes da sessão. O valor estimado não é valor pago.
+O link da Licitanet não garante transmissão pública ao vivo.
+
+PRIVACIDADE
+Não há formulário de cadastro nem coleta de dados pessoais.
+Os botões apenas abrem o compartilhamento nativo do dispositivo
+ou copiam texto localmente.
+
+FONTES
+PNCP: https://pncp.gov.br/app/editais?q=Castanhal&status=recebendo_proposta&uf=PA
+Licitanet: https://www.licitanet.com.br/
+Prefeitura: https://castanhal.pa.gov.br/
+Lei 14.133/2021: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm
+TCM-PA: https://www.tcm.pa.gov.br/
